@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(13, 13, 13);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f3f7;
+}
+
+header {
+    background-color: #0e0d0d;
+    color: #f7f6f6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.profile-text {
+    text-align: left;
+}
+
+.profile-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3.section-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: #222;
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+}
